@@ -1,0 +1,373 @@
+_RINvNtCsgAhMLgok1yH_8bytemuck7checked14try_from_bytesNtNtCsczcAd7TsHXt_9pe_parser4coff16coff_file_headerEBT_:
+  249|     29|pub fn try_from_bytes<T: CheckedBitPattern>(
+  250|     29|  s: &[u8],
+  251|     29|) -> Result<&T, CheckedCastError> {
+  252|     29|  let pod = unsafe { internal::try_from_bytes(s) }?;
+  253|       |
+  254|     28|  if <T as CheckedBitPattern>::is_valid_bit_pattern(pod) {
+  255|     28|    Ok(unsafe { &*(pod as *const <T as CheckedBitPattern>::Bits as *const T) })
+  256|       |  } else {
+  257|      0|    Err(CheckedCastError::InvalidBitPattern)
+  258|       |  }
+  259|     29|}
+_RINvNtCsgAhMLgok1yH_8bytemuck7checked14try_from_bytesNtNtCsczcAd7TsHXt_9pe_parser7section14section_headerEBT_:
+  249|    133|pub fn try_from_bytes<T: CheckedBitPattern>(
+  250|    133|  s: &[u8],
+  251|    133|) -> Result<&T, CheckedCastError> {
+  252|    133|  let pod = unsafe { internal::try_from_bytes(s) }?;
+  253|       |
+  254|    133|  if <T as CheckedBitPattern>::is_valid_bit_pattern(pod) {
+  255|    133|    Ok(unsafe { &*(pod as *const <T as CheckedBitPattern>::Bits as *const T) })
+  256|       |  } else {
+  257|      0|    Err(CheckedCastError::InvalidBitPattern)
+  258|       |  }
+  259|    133|}
+_RINvNtCsgAhMLgok1yH_8bytemuck7checked14try_from_bytesNtNtCsczcAd7TsHXt_9pe_parser8optional18optional_header_32EBT_:
+  249|      1|pub fn try_from_bytes<T: CheckedBitPattern>(
+  250|      1|  s: &[u8],
+  251|      1|) -> Result<&T, CheckedCastError> {
+  252|      1|  let pod = unsafe { internal::try_from_bytes(s) }?;
+  253|       |
+  254|      1|  if <T as CheckedBitPattern>::is_valid_bit_pattern(pod) {
+  255|      1|    Ok(unsafe { &*(pod as *const <T as CheckedBitPattern>::Bits as *const T) })
+  256|       |  } else {
+  257|      0|    Err(CheckedCastError::InvalidBitPattern)
+  258|       |  }
+  259|      1|}
+_RINvNtCsgAhMLgok1yH_8bytemuck7checked14try_from_bytesNtNtCsczcAd7TsHXt_9pe_parser8optional18optional_header_64EBT_:
+  249|      1|pub fn try_from_bytes<T: CheckedBitPattern>(
+  250|      1|  s: &[u8],
+  251|      1|) -> Result<&T, CheckedCastError> {
+  252|      1|  let pod = unsafe { internal::try_from_bytes(s) }?;
+  253|       |
+  254|      1|  if <T as CheckedBitPattern>::is_valid_bit_pattern(pod) {
+  255|      1|    Ok(unsafe { &*(pod as *const <T as CheckedBitPattern>::Bits as *const T) })
+  256|       |  } else {
+  257|      0|    Err(CheckedCastError::InvalidBitPattern)
+  258|       |  }
+  259|      1|}
+_RNvXNtCsgAhMLgok1yH_8bytemuck7checkedNtNtCsczcAd7TsHXt_9pe_parser7section14section_headerNtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+  147|    133|  fn is_valid_bit_pattern(_bits: &T) -> bool {
+  148|    133|    true
+  149|    133|  }
+_RNvXNtCsgAhMLgok1yH_8bytemuck7checkedNtNtCsczcAd7TsHXt_9pe_parser8optional18optional_header_64NtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+  147|      1|  fn is_valid_bit_pattern(_bits: &T) -> bool {
+  148|      1|    true
+  149|      1|  }
+_RNvXNtCsgAhMLgok1yH_8bytemuck7checkedNtNtCsczcAd7TsHXt_9pe_parser8optional18optional_header_32NtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+  147|      1|  fn is_valid_bit_pattern(_bits: &T) -> bool {
+  148|      1|    true
+  149|      1|  }
+_RNvXNtCsgAhMLgok1yH_8bytemuck7checkedNtNtCsczcAd7TsHXt_9pe_parser4coff16coff_file_headerNtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+  147|     28|  fn is_valid_bit_pattern(_bits: &T) -> bool {
+  148|     28|    true
+  149|     28|  }
+_RNvXs2_NtCsgAhMLgok1yH_8bytemuck7checkedNtB5_16CheckedCastErrorINtNtCshwq4AGnc32m_4core7convert4FromNtB7_12PodCastErrorE4from:
+  236|      1|  fn from(err: crate::PodCastError) -> CheckedCastError {
+  237|      1|    CheckedCastError::PodCastError(err)
+  238|      1|  }
+
+_RINvNtCsgAhMLgok1yH_8bytemuck8internal14try_from_bytesNtNtCsczcAd7TsHXt_9pe_parser4coff16coff_file_headerEBU_:
+  140|     29|pub(crate) unsafe fn try_from_bytes<T: Copy>(
+  141|     29|  s: &[u8],
+  142|     29|) -> Result<&T, PodCastError> {
+  143|     29|  if s.len() != size_of::<T>() {
+  144|      0|    Err(PodCastError::SizeMismatch)
+  145|     29|  } else if (s.as_ptr() as usize) % align_of::<T>() != 0 {
+  146|      1|    Err(PodCastError::TargetAlignmentGreaterAndInputNotAligned)
+  147|       |  } else {
+  148|     28|    Ok(unsafe { &*(s.as_ptr() as *const T) })
+  149|       |  }
+  150|     29|}
+_RINvNtCsgAhMLgok1yH_8bytemuck8internal14try_from_bytesNtNtCsczcAd7TsHXt_9pe_parser7section14section_headerEBU_:
+  140|    133|pub(crate) unsafe fn try_from_bytes<T: Copy>(
+  141|    133|  s: &[u8],
+  142|    133|) -> Result<&T, PodCastError> {
+  143|    133|  if s.len() != size_of::<T>() {
+  144|      0|    Err(PodCastError::SizeMismatch)
+  145|    133|  } else if (s.as_ptr() as usize) % align_of::<T>() != 0 {
+  146|      0|    Err(PodCastError::TargetAlignmentGreaterAndInputNotAligned)
+  147|       |  } else {
+  148|    133|    Ok(unsafe { &*(s.as_ptr() as *const T) })
+  149|       |  }
+  150|    133|}
+_RINvNtCsgAhMLgok1yH_8bytemuck8internal14try_from_bytesNtNtCsczcAd7TsHXt_9pe_parser8optional18optional_header_32EBU_:
+  140|      1|pub(crate) unsafe fn try_from_bytes<T: Copy>(
+  141|      1|  s: &[u8],
+  142|      1|) -> Result<&T, PodCastError> {
+  143|      1|  if s.len() != size_of::<T>() {
+  144|      0|    Err(PodCastError::SizeMismatch)
+  145|      1|  } else if (s.as_ptr() as usize) % align_of::<T>() != 0 {
+  146|      0|    Err(PodCastError::TargetAlignmentGreaterAndInputNotAligned)
+  147|       |  } else {
+  148|      1|    Ok(unsafe { &*(s.as_ptr() as *const T) })
+  149|       |  }
+  150|      1|}
+_RINvNtCsgAhMLgok1yH_8bytemuck8internal14try_from_bytesNtNtCsczcAd7TsHXt_9pe_parser8optional18optional_header_64EBU_:
+  140|      1|pub(crate) unsafe fn try_from_bytes<T: Copy>(
+  141|      1|  s: &[u8],
+  142|      1|) -> Result<&T, PodCastError> {
+  143|      1|  if s.len() != size_of::<T>() {
+  144|      0|    Err(PodCastError::SizeMismatch)
+  145|      1|  } else if (s.as_ptr() as usize) % align_of::<T>() != 0 {
+  146|      0|    Err(PodCastError::TargetAlignmentGreaterAndInputNotAligned)
+  147|       |  } else {
+  148|      1|    Ok(unsafe { &*(s.as_ptr() as *const T) })
+  149|       |  }
+  150|      1|}
+
+_RNvNvCsl2DiLEfXf1k_9pe_parser1__19___libfuzzer_sys_run:
+  241|     39|            fn __libfuzzer_sys_run($bytes: &[u8]) {
+  242|     39|                $body
+  243|     39|            }
+rust_fuzzer_test_input:
+  215|     39|                if let Some(path) = $crate::RUST_LIBFUZZER_DEBUG_PATH.get() {
+  216|       |                    use std::io::Write;
+  217|      0|                    let mut file = std::fs::File::create(path)
+  218|      0|                        .expect("failed to create `RUST_LIBFUZZER_DEBUG_PATH` file");
+  219|      0|                    writeln!(&mut file, "{:?}", bytes)
+  220|      0|                        .expect("failed to write to `RUST_LIBFUZZER_DEBUG_PATH` file");
+  221|      0|                    return 0;
+  222|     39|                }
+  223|     39|
+  224|     39|                __libfuzzer_sys_run(bytes);
+  225|     39|                0
+  226|     39|            }
+LLVMFuzzerTestOneInput:
+   58|     39|pub fn test_input_wrap(data: *const u8, size: usize) -> i32 {
+   59|     39|    let test_input = ::std::panic::catch_unwind(|| unsafe {
+   60|       |        let data_slice = ::std::slice::from_raw_parts(data, size);
+   61|       |        rust_fuzzer_test_input(data_slice)
+   62|     39|    });
+   63|     39|
+   64|     39|    match test_input {
+   65|     39|        Ok(i) => i,
+   66|       |        Err(_) => {
+   67|       |            // hopefully the custom panic hook will be called before and abort the
+   68|       |            // process before the stack frames are unwinded.
+   69|      0|            ::std::process::abort();
+   70|       |        }
+   71|       |    }
+   72|     39|}
+_RNCNvCsbDCbpDhezMC_13libfuzzer_sys15test_input_wrap0B3_:
+   59|     39|    let test_input = ::std::panic::catch_unwind(|| unsafe {
+   60|     39|        let data_slice = ::std::slice::from_raw_parts(data, size);
+   61|     39|        rust_fuzzer_test_input(data_slice)
+   62|     39|    });
+LLVMFuzzerInitialize:
+   79|      2|pub fn initialize(_argc: *const isize, _argv: *const *const *const u8) -> isize {
+   80|      2|    // Registers a panic hook that aborts the process before unwinding.
+   81|      2|    // It is useful to abort before unwinding so that the fuzzer will then be
+   82|      2|    // able to analyse the process stack frames to tell different bugs appart.
+   83|      2|    //
+   84|      2|    // HACK / FIXME: it would be better to use `-C panic=abort` but it's currently
+   85|      2|    // impossible to build code using compiler plugins with this flag.
+   86|      2|    // We will be able to remove this code when
+   87|      2|    // https://github.com/rust-lang/cargo/issues/5423 is fixed.
+   88|      2|    let default_hook = ::std::panic::take_hook();
+   89|      2|    ::std::panic::set_hook(Box::new(move |panic_info| {
+   90|       |        default_hook(panic_info);
+   91|       |        ::std::process::abort();
+   92|      2|    }));
+   93|       |
+   94|       |    // Initialize the `RUST_LIBFUZZER_DEBUG_PATH` cell with the path so it can be
+   95|       |    // reused with little overhead.
+   96|      2|    if let Ok(path) = std::env::var("RUST_LIBFUZZER_DEBUG_PATH") {
+   97|      0|        RUST_LIBFUZZER_DEBUG_PATH
+   98|      0|            .set(path)
+   99|      0|            .expect("Since this is initialize it is only called once so can never fail");
+  100|      2|    }
+  101|      2|    0
+  102|      2|}
+
+_RNvYNtNtCsczcAd7TsHXt_9pe_parser8optional5MagicNtNtCs6NifZnJOR7b_10num_traits4cast13FromPrimitive8from_u16B6_:
+  474|      5|    fn from_u16(n: u16) -> Option<Self> {
+  475|      5|        FromPrimitive::from_u64(From::from(n))
+  476|      5|    }
+
+_RNvMs2_NtCs1ko4dTZxnrS_9once_cell3impINtB5_8OnceCellNtNtCsgwYtTq3KIm_5alloc6string6StringE14is_initializedCsbDCbpDhezMC_13libfuzzer_sys:
+   59|     39|    pub(crate) fn is_initialized(&self) -> bool {
+   60|     39|        // An `Acquire` load is enough because that makes all the initialization
+   61|     39|        // operations visible to us, and, this being a fast path, weaker
+   62|     39|        // ordering helps with performance. This `Acquire` synchronizes with
+   63|     39|        // `SeqCst` operations on the slow path.
+   64|     39|        self.queue.load(Ordering::Acquire) == COMPLETE_PTR
+   65|     39|    }
+
+_RNvMs4_NtCs1ko4dTZxnrS_9once_cell4syncINtB5_8OnceCellNtNtCsgwYtTq3KIm_5alloc6string6StringE3getCsbDCbpDhezMC_13libfuzzer_sys:
+  931|     39|        pub fn get(&self) -> Option<&T> {
+  932|     39|            if self.0.is_initialized() {
+  933|       |                // Safe b/c value is initialized.
+  934|      0|                Some(unsafe { self.get_unchecked() })
+  935|       |            } else {
+  936|     39|                None
+  937|       |            }
+  938|     39|        }
+
+_RNvXs7_NtCsczcAd7TsHXt_9pe_parser4coffNtB5_16coff_file_headerNtNtCshwq4AGnc32m_4core7default7Default7defaultB7_:
+    9|     30|#[derive(Copy, Clone, Pod, Zeroable, Default)]
+
+_RNvXNvNtCsczcAd7TsHXt_9pe_parser8optional33__IMPL_NUM_FromPrimitive_FOR_MagicNtB4_5MagicNtNtCs6NifZnJOR7b_10num_traits4cast13FromPrimitive8from_u64B6_:
+   10|      5|#[derive(FromPrimitive, Debug)]
+_RNvXs5_NtCsczcAd7TsHXt_9pe_parser8optionalNtB5_18optional_header_64NtB5_8Optional21parse_optional_header:
+  478|      2|    fn parse_optional_header(binary: &[u8], offset: &mut usize) -> Result<Self, Error> {
+  479|      2|        let size = std::mem::size_of::<Self>();
+  480|      2|        let slice = match binary.get(*offset..*offset+size) {
+  481|      1|            Some(slice) => slice,
+  482|       |            None => {
+  483|      1|                return Err(Error::new(ErrorKind::Other, "Offset out of range!"));
+  484|       |            }
+  485|       |        };
+  486|       |    
+  487|      1|        let optional_header = try_from_bytes::<optional_header_64>(slice);
+  488|      1|        *offset += size;
+  489|      1|        match optional_header.copied() {
+  490|      1|            Ok(header) => {
+  491|      1|                return Ok(header);
+  492|       |            }
+  493|       |            Err(_) => {
+  494|      0|                return Err(Error::new(ErrorKind::Other, "Failed to parse header!"));
+  495|       |            }
+  496|       |        }
+  497|      2|    }
+_RNvXs4_NtCsczcAd7TsHXt_9pe_parser8optionalNtB5_18optional_header_32NtB5_8Optional21parse_optional_header:
+  446|      2|    fn parse_optional_header(binary: &[u8], offset: &mut usize) -> Result<Self, Error> {
+  447|      2|        let size = std::mem::size_of::<Self>();
+  448|      2|        let slice = match binary.get(*offset..*offset+size) {
+  449|      1|            Some(slice) => slice,
+  450|       |            None => {
+  451|      1|                return Err(Error::new(ErrorKind::Other, "Offset out of range!"));
+  452|       |            }
+  453|       |        };
+  454|       |
+  455|      1|        let optional_header = try_from_bytes::<optional_header_32>(slice);
+  456|      1|        *offset += size;
+  457|      1|        
+  458|      1|        match optional_header.copied() {
+  459|      1|            Ok(header) => {
+  460|      1|                return Ok(header);
+  461|       |            }
+  462|       |            Err(_) => {
+  463|      0|                return Err(Error::new(ErrorKind::Other, "Failed to parse header!"));
+  464|       |            }
+  465|       |        }
+  466|      2|    }
+_RNvXNvNtCsczcAd7TsHXt_9pe_parser8optional33__IMPL_NUM_FromPrimitive_FOR_MagicNtB4_5MagicNtNtCs6NifZnJOR7b_10num_traits4cast13FromPrimitive8from_i64B6_:
+   10|      5|#[derive(FromPrimitive, Debug)]
+
+_RNvNtCsczcAd7TsHXt_9pe_parser2pe25parse_portable_executable:
+   22|     39|pub fn parse_portable_executable(binary: &[u8]) -> Result<PortableExecutable, Error> {
+   23|     39|    let mut offset = read_u16(binary, IMAGE_DOS_PE_SIGNATURE_OFFSET)?.into();
+   24|       |
+   25|     38|    let slice = match binary.get(offset..offset+4) {
+   26|     36|        Some(slice) => slice,
+   27|       |        None => {
+   28|      2|            return Err(Error::new(ErrorKind::Other, "Offset out of range!"))
+   29|       |        }
+   30|       |    };
+   31|       |
+   32|     36|    let string = match String::from_utf8(slice.to_vec()) {
+   33|     34|        Ok(string) => string,
+   34|       |        Err(_) => {
+   35|      2|            return Err(Error::new(ErrorKind::Other, "Failed to parse string!"));
+   36|       |        }
+   37|       |    };
+   38|       |
+   39|     34|    if string != "PE\0\0" {
+   40|      4|        return Err(Error::new(ErrorKind::InvalidData, "File is not a valid PE!"));
+   41|     30|    }
+   42|     30|
+   43|     30|    offset += 4;
+   44|     30|
+   45|     30|    let mut pe: PortableExecutable = PortableExecutable { 
+   46|     30|        coff: coff_file_header::default(), 
+   47|     30|        optional_header_32: None, 
+   48|     30|        optional_header_64: None, 
+   49|     30|        section_table: Vec::new()
+   50|     30|    };
+   51|       |
+   52|     30|    let slice = match binary.get(offset..offset+20) {
+   53|     29|        Some(slice) => slice,
+   54|       |        None => {
+   55|      1|            return Err(Error::new(ErrorKind::Other, "Offset out of range!"))
+   56|       |        }
+   57|       |    };
+   58|       |
+   59|     29|    pe.coff = match try_from_bytes::<coff_file_header>(slice) {
+   60|     28|        Ok(coff) => *coff,
+   61|       |        Err(_) => {
+   62|      1|            return Err(Error::new(ErrorKind::Other, "Failed to get COFF header!"));
+   63|       |        }
+   64|       |    };
+   65|       |
+   66|     28|    offset += 20;
+   67|     28|
+   68|     28|    if pe.coff.size_of_optional_header != 0 {
+   69|      6|        let magic = match Magic::from_u16(read_u16(binary, offset)?) {
+   70|      4|            Some(magic) => magic,
+   71|       |            None => {
+   72|      1|                return Err(Error::new(ErrorKind::Other, "Failed to get Magic!"));
+   73|       |            }
+   74|       |        };
+   75|       |
+   76|      4|        match magic {
+   77|       |            Magic::PE32 => {
+   78|      2|                pe.optional_header_32 = Some(optional_header_32::parse_optional_header(binary, &mut offset)?);
+   79|       |            }
+   80|       |            Magic::PE64 => {
+   81|      2|                pe.optional_header_64 = Some(optional_header_64::parse_optional_header(binary, &mut offset)?);
+   82|       |            }
+   83|       |        }
+   84|     22|    }
+   85|       |
+   86|     24|    pe.section_table = parse_section_table(binary, offset, pe.coff.number_of_sections);
+   87|     24|
+   88|     24|    /*for section in pe.section_table.iter() {
+   89|     24|        let name = match section.get_name() {
+   90|     24|            Some(name) => name,
+   91|     24|            None => {
+   92|     24|                return Err(Error::new(ErrorKind::Other, "Failed to get section name"));
+   93|     24|            }
+   94|     24|        };
+   95|     24|
+   96|     24|        match name.trim_end_matches(char::from(0)) {
+   97|     24|            ".edata" => {
+   98|     24|                println!(".edata Section");
+   99|     24|            }
+  100|     24|            ".idata" => {
+  101|     24|                println!(".idata Section");
+  102|     24|            }
+  103|     24|            _ => {}
+  104|     24|        }
+  105|     24|    }*/
+  106|     24|
+  107|     24|    Ok(pe)
+  108|     39|}
+_RNvNtCsczcAd7TsHXt_9pe_parser2pe8read_u16:
+  137|     45|    if let Some(array) = binary.get(offset..offset+2) {
+  138|     43|        if let Some(slice) = array.try_into().ok() {
+  139|     43|            return Ok(u16::from_le_bytes(slice));
+  140|      0|        }
+  141|      2|    }
+  142|       |
+  143|      2|    Err(Error::new(ErrorKind::Other, "Failed to get value"))
+  144|     45|}
+
+_RNvNtCsczcAd7TsHXt_9pe_parser7section19parse_section_table:
+    9|     24|pub fn parse_section_table(binary: &[u8], offset: usize, number_of_sections: u16) -> Vec<section_header> {
+   10|     24|    let mut offset = offset;
+   11|     24|    let mut headers: Vec<section_header> = Vec::new();
+   12|     24|    let header_size = std::mem::size_of::<section_header>();
+   13|     24|
+   14|     24|    for _ in 0..number_of_sections {
+   15|   420k|        if let Some(slice) = binary.get(offset..offset+header_size) {
+   16|    133|            if let Some(header) = try_from_bytes::<section_header>(slice).ok() {
+   17|    133|                headers.push(*header);
+   18|    133|            }
+   19|   420k|        }
+   20|   420k|        offset += header_size;
+   21|       |    }
+   22|       |
+   23|     24|    headers
+   24|     24|}
+
