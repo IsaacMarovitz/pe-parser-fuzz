@@ -1,4 +1,4 @@
-_RINvNtCsiRuRuAkFJpA_8bytemuck7checked14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_parser4coff16coff_file_headerEBT_:
+_RINvNtCse6J7Su0QKFu_8bytemuck7checked14try_from_bytesNtNtCsmK1NR72cPa_9pe_parser4coff16coff_file_headerEBT_:
   249|     35|pub fn try_from_bytes<T: CheckedBitPattern>(
   250|     35|  s: &[u8],
   251|     35|) -> Result<&T, CheckedCastError> {
@@ -10,7 +10,7 @@ _RINvNtCsiRuRuAkFJpA_8bytemuck7checked14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_pars
   257|      0|    Err(CheckedCastError::InvalidBitPattern)
   258|       |  }
   259|     35|}
-_RINvNtCsiRuRuAkFJpA_8bytemuck7checked14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_parser7section14section_headerEBT_:
+_RINvNtCse6J7Su0QKFu_8bytemuck7checked14try_from_bytesNtNtCsmK1NR72cPa_9pe_parser7section14section_headerEBT_:
   249|    133|pub fn try_from_bytes<T: CheckedBitPattern>(
   250|    133|  s: &[u8],
   251|    133|) -> Result<&T, CheckedCastError> {
@@ -22,7 +22,7 @@ _RINvNtCsiRuRuAkFJpA_8bytemuck7checked14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_pars
   257|      0|    Err(CheckedCastError::InvalidBitPattern)
   258|       |  }
   259|    133|}
-_RINvNtCsiRuRuAkFJpA_8bytemuck7checked14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_parser8optional18optional_header_32EBT_:
+_RINvNtCse6J7Su0QKFu_8bytemuck7checked14try_from_bytesNtNtCsmK1NR72cPa_9pe_parser8optional18optional_header_32EBT_:
   249|      1|pub fn try_from_bytes<T: CheckedBitPattern>(
   250|      1|  s: &[u8],
   251|      1|) -> Result<&T, CheckedCastError> {
@@ -34,7 +34,7 @@ _RINvNtCsiRuRuAkFJpA_8bytemuck7checked14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_pars
   257|      0|    Err(CheckedCastError::InvalidBitPattern)
   258|       |  }
   259|      1|}
-_RINvNtCsiRuRuAkFJpA_8bytemuck7checked14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_parser8optional18optional_header_64EBT_:
+_RINvNtCse6J7Su0QKFu_8bytemuck7checked14try_from_bytesNtNtCsmK1NR72cPa_9pe_parser8optional18optional_header_64EBT_:
   249|      2|pub fn try_from_bytes<T: CheckedBitPattern>(
   250|      2|  s: &[u8],
   251|      2|) -> Result<&T, CheckedCastError> {
@@ -46,28 +46,28 @@ _RINvNtCsiRuRuAkFJpA_8bytemuck7checked14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_pars
   257|      0|    Err(CheckedCastError::InvalidBitPattern)
   258|       |  }
   259|      2|}
-_RNvXNtCsiRuRuAkFJpA_8bytemuck7checkedNtNtCs9X7uWPVX1uR_9pe_parser7section14section_headerNtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+_RNvXNtCse6J7Su0QKFu_8bytemuck7checkedNtNtCsmK1NR72cPa_9pe_parser7section14section_headerNtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
   147|    133|  fn is_valid_bit_pattern(_bits: &T) -> bool {
   148|    133|    true
   149|    133|  }
-_RNvXNtCsiRuRuAkFJpA_8bytemuck7checkedNtNtCs9X7uWPVX1uR_9pe_parser8optional18optional_header_64NtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+_RNvXNtCse6J7Su0QKFu_8bytemuck7checkedNtNtCsmK1NR72cPa_9pe_parser8optional18optional_header_64NtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
   147|      1|  fn is_valid_bit_pattern(_bits: &T) -> bool {
   148|      1|    true
   149|      1|  }
-_RNvXNtCsiRuRuAkFJpA_8bytemuck7checkedNtNtCs9X7uWPVX1uR_9pe_parser8optional18optional_header_32NtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+_RNvXNtCse6J7Su0QKFu_8bytemuck7checkedNtNtCsmK1NR72cPa_9pe_parser8optional18optional_header_32NtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
   147|      1|  fn is_valid_bit_pattern(_bits: &T) -> bool {
   148|      1|    true
   149|      1|  }
-_RNvXNtCsiRuRuAkFJpA_8bytemuck7checkedNtNtCs9X7uWPVX1uR_9pe_parser4coff16coff_file_headerNtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+_RNvXNtCse6J7Su0QKFu_8bytemuck7checkedNtNtCsmK1NR72cPa_9pe_parser4coff16coff_file_headerNtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
   147|     34|  fn is_valid_bit_pattern(_bits: &T) -> bool {
   148|     34|    true
   149|     34|  }
-_RNvXs2_NtCsiRuRuAkFJpA_8bytemuck7checkedNtB5_16CheckedCastErrorINtNtCs2TKFnUfMo53_4core7convert4FromNtB7_12PodCastErrorE4from:
+_RNvXs2_NtCse6J7Su0QKFu_8bytemuck7checkedNtB5_16CheckedCastErrorINtNtCs9GXOHaFj2QS_4core7convert4FromNtB7_12PodCastErrorE4from:
   236|      2|  fn from(err: crate::PodCastError) -> CheckedCastError {
   237|      2|    CheckedCastError::PodCastError(err)
   238|      2|  }
 
-_RINvNtCsiRuRuAkFJpA_8bytemuck8internal14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_parser4coff16coff_file_headerEBU_:
+_RINvNtCse6J7Su0QKFu_8bytemuck8internal14try_from_bytesNtNtCsmK1NR72cPa_9pe_parser4coff16coff_file_headerEBU_:
   140|     35|pub(crate) unsafe fn try_from_bytes<T: Copy>(
   141|     35|  s: &[u8],
   142|     35|) -> Result<&T, PodCastError> {
@@ -79,7 +79,7 @@ _RINvNtCsiRuRuAkFJpA_8bytemuck8internal14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_par
   148|     34|    Ok(unsafe { &*(s.as_ptr() as *const T) })
   149|       |  }
   150|     35|}
-_RINvNtCsiRuRuAkFJpA_8bytemuck8internal14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_parser7section14section_headerEBU_:
+_RINvNtCse6J7Su0QKFu_8bytemuck8internal14try_from_bytesNtNtCsmK1NR72cPa_9pe_parser7section14section_headerEBU_:
   140|    133|pub(crate) unsafe fn try_from_bytes<T: Copy>(
   141|    133|  s: &[u8],
   142|    133|) -> Result<&T, PodCastError> {
@@ -91,7 +91,7 @@ _RINvNtCsiRuRuAkFJpA_8bytemuck8internal14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_par
   148|    133|    Ok(unsafe { &*(s.as_ptr() as *const T) })
   149|       |  }
   150|    133|}
-_RINvNtCsiRuRuAkFJpA_8bytemuck8internal14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_parser8optional18optional_header_32EBU_:
+_RINvNtCse6J7Su0QKFu_8bytemuck8internal14try_from_bytesNtNtCsmK1NR72cPa_9pe_parser8optional18optional_header_32EBU_:
   140|      1|pub(crate) unsafe fn try_from_bytes<T: Copy>(
   141|      1|  s: &[u8],
   142|      1|) -> Result<&T, PodCastError> {
@@ -103,7 +103,7 @@ _RINvNtCsiRuRuAkFJpA_8bytemuck8internal14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_par
   148|      1|    Ok(unsafe { &*(s.as_ptr() as *const T) })
   149|       |  }
   150|      1|}
-_RINvNtCsiRuRuAkFJpA_8bytemuck8internal14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_parser8optional18optional_header_64EBU_:
+_RINvNtCse6J7Su0QKFu_8bytemuck8internal14try_from_bytesNtNtCsmK1NR72cPa_9pe_parser8optional18optional_header_64EBU_:
   140|      2|pub(crate) unsafe fn try_from_bytes<T: Copy>(
   141|      2|  s: &[u8],
   142|      2|) -> Result<&T, PodCastError> {
@@ -116,7 +116,7 @@ _RINvNtCsiRuRuAkFJpA_8bytemuck8internal14try_from_bytesNtNtCs9X7uWPVX1uR_9pe_par
   149|       |  }
   150|      2|}
 
-_RNvNvCs2OXSMl0CZFh_9pe_parser1__19___libfuzzer_sys_run:
+_RNvNvCs7EFbnv0QoxW_9pe_parser1__19___libfuzzer_sys_run:
   241|     45|            fn __libfuzzer_sys_run($bytes: &[u8]) {
   242|     45|                $body
   243|     45|            }
@@ -174,18 +174,18 @@ LLVMFuzzerInitialize:
   100|      2|    }
   101|      2|    0
   102|      2|}
-_RNCNvCsjkmdbcl0bPx_13libfuzzer_sys15test_input_wrap0B3_:
+_RNCNvCscPqY5GuMnrl_13libfuzzer_sys15test_input_wrap0B3_:
    59|     45|    let test_input = ::std::panic::catch_unwind(|| unsafe {
    60|     45|        let data_slice = ::std::slice::from_raw_parts(data, size);
    61|     45|        rust_fuzzer_test_input(data_slice)
    62|     45|    });
 
-_RNvYNtNtCs9X7uWPVX1uR_9pe_parser8optional5MagicNtNtCslztFkBPwmNH_10num_traits4cast13FromPrimitive8from_u16B6_:
+_RNvYNtNtCsmK1NR72cPa_9pe_parser8optional5MagicNtNtCs7TKy1WwONnw_10num_traits4cast13FromPrimitive8from_u16B6_:
   474|      7|    fn from_u16(n: u16) -> Option<Self> {
   475|      7|        FromPrimitive::from_u64(From::from(n))
   476|      7|    }
 
-_RNvMs2_NtCslmctgMT2o9I_9once_cell3impINtB5_8OnceCellNtNtCs6Y7KUqhNohK_5alloc6string6StringE14is_initializedCsjkmdbcl0bPx_13libfuzzer_sys:
+_RNvMs2_NtCsbUjc3yXQ73G_9once_cell3impINtB5_8OnceCellNtNtCsa5MbkYRUjPY_5alloc6string6StringE14is_initializedCscPqY5GuMnrl_13libfuzzer_sys:
    59|     45|    pub(crate) fn is_initialized(&self) -> bool {
    60|     45|        // An `Acquire` load is enough because that makes all the initialization
    61|     45|        // operations visible to us, and, this being a fast path, weaker
@@ -194,7 +194,7 @@ _RNvMs2_NtCslmctgMT2o9I_9once_cell3impINtB5_8OnceCellNtNtCs6Y7KUqhNohK_5alloc6st
    64|     45|        self.queue.load(Ordering::Acquire) == COMPLETE_PTR
    65|     45|    }
 
-_RNvMs4_NtCslmctgMT2o9I_9once_cell4syncINtB5_8OnceCellNtNtCs6Y7KUqhNohK_5alloc6string6StringE3getCsjkmdbcl0bPx_13libfuzzer_sys:
+_RNvMs4_NtCsbUjc3yXQ73G_9once_cell4syncINtB5_8OnceCellNtNtCsa5MbkYRUjPY_5alloc6string6StringE3getCscPqY5GuMnrl_13libfuzzer_sys:
   931|     45|        pub fn get(&self) -> Option<&T> {
   932|     45|            if self.0.is_initialized() {
   933|       |                // Safe b/c value is initialized.
@@ -204,12 +204,35 @@ _RNvMs4_NtCslmctgMT2o9I_9once_cell4syncINtB5_8OnceCellNtNtCs6Y7KUqhNohK_5alloc6s
   937|       |            }
   938|     45|        }
 
-_RNvXs7_NtCs9X7uWPVX1uR_9pe_parser4coffNtB5_16coff_file_headerNtNtCs2TKFnUfMo53_4core7default7Default7defaultB7_:
+_RNvXs7_NtCsmK1NR72cPa_9pe_parser4coffNtB5_16coff_file_headerNtNtCs9GXOHaFj2QS_4core7default7Default7defaultB7_:
     9|     36|#[derive(Copy, Clone, Pod, Zeroable, Default)]
 
-_RNvXNvNtCs9X7uWPVX1uR_9pe_parser8optional33__IMPL_NUM_FromPrimitive_FOR_MagicNtB4_5MagicNtNtCslztFkBPwmNH_10num_traits4cast13FromPrimitive8from_i64B6_:
+_RNvXs5_NtCsmK1NR72cPa_9pe_parser8optionalNtB5_18optional_header_64NtB5_8Optional21parse_optional_header:
+  478|      3|    fn parse_optional_header(binary: &[u8], offset: &mut usize) -> Result<Self, Error> {
+  479|      3|        let size = std::mem::size_of::<Self>();
+  480|      3|        let slice = match binary.get(*offset..*offset+size) {
+  481|      2|            Some(slice) => slice,
+  482|       |            None => {
+  483|      1|                return Err(Error::new(ErrorKind::Other, "Offset out of range!"));
+  484|       |            }
+  485|       |        };
+  486|       |    
+  487|      2|        let optional_header = try_from_bytes::<optional_header_64>(slice);
+  488|      2|        *offset += size;
+  489|      2|        match optional_header.copied() {
+  490|      1|            Ok(header) => {
+  491|      1|                return Ok(header);
+  492|       |            }
+  493|       |            Err(_) => {
+  494|      1|                return Err(Error::new(ErrorKind::Other, "Failed to parse header!"));
+  495|       |            }
+  496|       |        }
+  497|      3|    }
+_RNvXNvNtCsmK1NR72cPa_9pe_parser8optional33__IMPL_NUM_FromPrimitive_FOR_MagicNtB4_5MagicNtNtCs7TKy1WwONnw_10num_traits4cast13FromPrimitive8from_i64B6_:
    10|      7|#[derive(FromPrimitive, Debug)]
-_RNvXs4_NtCs9X7uWPVX1uR_9pe_parser8optionalNtB5_18optional_header_32NtB5_8Optional21parse_optional_header:
+_RNvXNvNtCsmK1NR72cPa_9pe_parser8optional33__IMPL_NUM_FromPrimitive_FOR_MagicNtB4_5MagicNtNtCs7TKy1WwONnw_10num_traits4cast13FromPrimitive8from_u64B6_:
+   10|      7|#[derive(FromPrimitive, Debug)]
+_RNvXs4_NtCsmK1NR72cPa_9pe_parser8optionalNtB5_18optional_header_32NtB5_8Optional21parse_optional_header:
   446|      2|    fn parse_optional_header(binary: &[u8], offset: &mut usize) -> Result<Self, Error> {
   447|      2|        let size = std::mem::size_of::<Self>();
   448|      2|        let slice = match binary.get(*offset..*offset+size) {
@@ -231,31 +254,8 @@ _RNvXs4_NtCs9X7uWPVX1uR_9pe_parser8optionalNtB5_18optional_header_32NtB5_8Option
   464|       |            }
   465|       |        }
   466|      2|    }
-_RNvXs5_NtCs9X7uWPVX1uR_9pe_parser8optionalNtB5_18optional_header_64NtB5_8Optional21parse_optional_header:
-  478|      3|    fn parse_optional_header(binary: &[u8], offset: &mut usize) -> Result<Self, Error> {
-  479|      3|        let size = std::mem::size_of::<Self>();
-  480|      3|        let slice = match binary.get(*offset..*offset+size) {
-  481|      2|            Some(slice) => slice,
-  482|       |            None => {
-  483|      1|                return Err(Error::new(ErrorKind::Other, "Offset out of range!"));
-  484|       |            }
-  485|       |        };
-  486|       |    
-  487|      2|        let optional_header = try_from_bytes::<optional_header_64>(slice);
-  488|      2|        *offset += size;
-  489|      2|        match optional_header.copied() {
-  490|      1|            Ok(header) => {
-  491|      1|                return Ok(header);
-  492|       |            }
-  493|       |            Err(_) => {
-  494|      1|                return Err(Error::new(ErrorKind::Other, "Failed to parse header!"));
-  495|       |            }
-  496|       |        }
-  497|      3|    }
-_RNvXNvNtCs9X7uWPVX1uR_9pe_parser8optional33__IMPL_NUM_FromPrimitive_FOR_MagicNtB4_5MagicNtNtCslztFkBPwmNH_10num_traits4cast13FromPrimitive8from_u64B6_:
-   10|      7|#[derive(FromPrimitive, Debug)]
 
-_RNvNtCs9X7uWPVX1uR_9pe_parser2pe25parse_portable_executable:
+_RNvNtCsmK1NR72cPa_9pe_parser2pe25parse_portable_executable:
    22|     45|pub fn parse_portable_executable(binary: &[u8]) -> Result<PortableExecutable, Error> {
    23|     45|    let mut offset = read_u16(binary, IMAGE_DOS_PE_SIGNATURE_OFFSET)?.into();
    24|       |
@@ -343,7 +343,7 @@ _RNvNtCs9X7uWPVX1uR_9pe_parser2pe25parse_portable_executable:
   106|     26|
   107|     26|    Ok(pe)
   108|     45|}
-_RNvNtCs9X7uWPVX1uR_9pe_parser2pe8read_u16:
+_RNvNtCsmK1NR72cPa_9pe_parser2pe8read_u16:
   137|     55|    if let Some(array) = binary.get(offset..offset+2) {
   138|     51|        if let Some(slice) = array.try_into().ok() {
   139|     51|            return Ok(u16::from_le_bytes(slice));
@@ -353,7 +353,7 @@ _RNvNtCs9X7uWPVX1uR_9pe_parser2pe8read_u16:
   143|      4|    Err(Error::new(ErrorKind::Other, "Failed to get value"))
   144|     55|}
 
-_RNvNtCs9X7uWPVX1uR_9pe_parser7section19parse_section_table:
+_RNvNtCsmK1NR72cPa_9pe_parser7section19parse_section_table:
     9|     26|pub fn parse_section_table(binary: &[u8], offset: usize, number_of_sections: u16) -> Vec<section_header> {
    10|     26|    let mut offset = offset;
    11|     26|    let mut headers: Vec<section_header> = Vec::new();
