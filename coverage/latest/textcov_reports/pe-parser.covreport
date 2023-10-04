@@ -1,4 +1,4 @@
-_RINvNtCsi9JExOh2d9K_8bytemuck7checked14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser8optional16OptionalHeader32EBT_:
+_RINvNtCsciVfI8xTG8z_8bytemuck7checked14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser8optional16OptionalHeader32EBT_:
   244|      1|pub fn try_from_bytes<T: CheckedBitPattern>(
   245|      1|  s: &[u8],
   246|      1|) -> Result<&T, CheckedCastError> {
@@ -10,7 +10,7 @@ _RINvNtCsi9JExOh2d9K_8bytemuck7checked14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parse
   252|      0|    Err(CheckedCastError::InvalidBitPattern)
   253|       |  }
   254|      1|}
-_RINvNtCsi9JExOh2d9K_8bytemuck7checked14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser8optional16OptionalHeader64EBT_:
+_RINvNtCsciVfI8xTG8z_8bytemuck7checked14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser8optional16OptionalHeader64EBT_:
   244|      2|pub fn try_from_bytes<T: CheckedBitPattern>(
   245|      2|  s: &[u8],
   246|      2|) -> Result<&T, CheckedCastError> {
@@ -22,15 +22,15 @@ _RINvNtCsi9JExOh2d9K_8bytemuck7checked14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parse
   252|      0|    Err(CheckedCastError::InvalidBitPattern)
   253|       |  }
   254|      2|}
-_RNvXNtCsi9JExOh2d9K_8bytemuck7checkedNtNtCsjBW7hFgJwU_9pe_parser4coff14CoffFileHeaderNtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+_RNvXNtCsciVfI8xTG8z_8bytemuck7checkedNtNtCshZ07bhv37hB_9pe_parser4coff14CoffFileHeaderNtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
   147|     28|  fn is_valid_bit_pattern(_bits: &T) -> bool {
   148|     28|    true
   149|     28|  }
-_RNvXNtCsi9JExOh2d9K_8bytemuck7checkedNtNtCsjBW7hFgJwU_9pe_parser7section13SectionHeaderNtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+_RNvXNtCsciVfI8xTG8z_8bytemuck7checkedNtNtCshZ07bhv37hB_9pe_parser7section13SectionHeaderNtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
   147|    132|  fn is_valid_bit_pattern(_bits: &T) -> bool {
   148|    132|    true
   149|    132|  }
-_RINvNtCsi9JExOh2d9K_8bytemuck7checked14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser4coff14CoffFileHeaderEBT_:
+_RINvNtCsciVfI8xTG8z_8bytemuck7checked14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser4coff14CoffFileHeaderEBT_:
   244|     29|pub fn try_from_bytes<T: CheckedBitPattern>(
   245|     29|  s: &[u8],
   246|     29|) -> Result<&T, CheckedCastError> {
@@ -42,7 +42,7 @@ _RINvNtCsi9JExOh2d9K_8bytemuck7checked14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parse
   252|      0|    Err(CheckedCastError::InvalidBitPattern)
   253|       |  }
   254|     29|}
-_RINvNtCsi9JExOh2d9K_8bytemuck7checked14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser7section13SectionHeaderEBT_:
+_RINvNtCsciVfI8xTG8z_8bytemuck7checked14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser7section13SectionHeaderEBT_:
   244|    132|pub fn try_from_bytes<T: CheckedBitPattern>(
   245|    132|  s: &[u8],
   246|    132|) -> Result<&T, CheckedCastError> {
@@ -54,20 +54,20 @@ _RINvNtCsi9JExOh2d9K_8bytemuck7checked14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parse
   252|      0|    Err(CheckedCastError::InvalidBitPattern)
   253|       |  }
   254|    132|}
-_RNvXNtCsi9JExOh2d9K_8bytemuck7checkedNtNtCsjBW7hFgJwU_9pe_parser8optional16OptionalHeader32NtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+_RNvXNtCsciVfI8xTG8z_8bytemuck7checkedNtNtCshZ07bhv37hB_9pe_parser8optional16OptionalHeader32NtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
   147|      1|  fn is_valid_bit_pattern(_bits: &T) -> bool {
   148|      1|    true
   149|      1|  }
-_RNvXNtCsi9JExOh2d9K_8bytemuck7checkedNtNtCsjBW7hFgJwU_9pe_parser8optional16OptionalHeader64NtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
+_RNvXNtCsciVfI8xTG8z_8bytemuck7checkedNtNtCshZ07bhv37hB_9pe_parser8optional16OptionalHeader64NtB2_17CheckedBitPattern20is_valid_bit_patternBD_:
   147|      1|  fn is_valid_bit_pattern(_bits: &T) -> bool {
   148|      1|    true
   149|      1|  }
-_RNvXs2_NtCsi9JExOh2d9K_8bytemuck7checkedNtB5_16CheckedCastErrorINtNtCslwuTnKBYoK4_4core7convert4FromNtB7_12PodCastErrorE4from:
+_RNvXs2_NtCsciVfI8xTG8z_8bytemuck7checkedNtB5_16CheckedCastErrorINtNtCs6qbvDI1kugF_4core7convert4FromNtB7_12PodCastErrorE4from:
   231|      2|  fn from(err: crate::PodCastError) -> CheckedCastError {
   232|      2|    CheckedCastError::PodCastError(err)
   233|      2|  }
 
-_RINvNtCsi9JExOh2d9K_8bytemuck8internal14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser7section13SectionHeaderEBU_:
+_RINvNtCsciVfI8xTG8z_8bytemuck8internal14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser7section13SectionHeaderEBU_:
   160|    132|pub(crate) unsafe fn try_from_bytes<T: Copy>(
   161|    132|  s: &[u8],
   162|    132|) -> Result<&T, PodCastError> {
@@ -79,7 +79,7 @@ _RINvNtCsi9JExOh2d9K_8bytemuck8internal14try_from_bytesNtNtCsjBW7hFgJwU_9pe_pars
   168|    132|    Ok(unsafe { &*(s.as_ptr() as *const T) })
   169|       |  }
   170|    132|}
-_RINvNtCsi9JExOh2d9K_8bytemuck8internal14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser8optional16OptionalHeader64EBU_:
+_RINvNtCsciVfI8xTG8z_8bytemuck8internal14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser8optional16OptionalHeader64EBU_:
   160|      2|pub(crate) unsafe fn try_from_bytes<T: Copy>(
   161|      2|  s: &[u8],
   162|      2|) -> Result<&T, PodCastError> {
@@ -91,7 +91,7 @@ _RINvNtCsi9JExOh2d9K_8bytemuck8internal14try_from_bytesNtNtCsjBW7hFgJwU_9pe_pars
   168|      1|    Ok(unsafe { &*(s.as_ptr() as *const T) })
   169|       |  }
   170|      2|}
-_RINvNtCsi9JExOh2d9K_8bytemuck8internal14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser8optional16OptionalHeader32EBU_:
+_RINvNtCsciVfI8xTG8z_8bytemuck8internal14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser8optional16OptionalHeader32EBU_:
   160|      1|pub(crate) unsafe fn try_from_bytes<T: Copy>(
   161|      1|  s: &[u8],
   162|      1|) -> Result<&T, PodCastError> {
@@ -103,7 +103,7 @@ _RINvNtCsi9JExOh2d9K_8bytemuck8internal14try_from_bytesNtNtCsjBW7hFgJwU_9pe_pars
   168|      1|    Ok(unsafe { &*(s.as_ptr() as *const T) })
   169|       |  }
   170|      1|}
-_RINvNtCsi9JExOh2d9K_8bytemuck8internal14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser4coff14CoffFileHeaderEBU_:
+_RINvNtCsciVfI8xTG8z_8bytemuck8internal14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser4coff14CoffFileHeaderEBU_:
   160|     29|pub(crate) unsafe fn try_from_bytes<T: Copy>(
   161|     29|  s: &[u8],
   162|     29|) -> Result<&T, PodCastError> {
@@ -115,7 +115,7 @@ _RINvNtCsi9JExOh2d9K_8bytemuck8internal14try_from_bytesNtNtCsjBW7hFgJwU_9pe_pars
   168|     28|    Ok(unsafe { &*(s.as_ptr() as *const T) })
   169|       |  }
   170|     29|}
-_RNvNtCsi9JExOh2d9K_8bytemuck8internal13is_aligned_toCsjBW7hFgJwU_9pe_parser:
+_RNvNtCsciVfI8xTG8z_8bytemuck8internal13is_aligned_toCshZ07bhv37hB_9pe_parser:
   138|    164|pub(crate) fn is_aligned_to(ptr: *const (), align: usize) -> bool {
   139|    164|  #[cfg(feature = "align_offset")]
   140|    164|  {
@@ -131,24 +131,24 @@ _RNvNtCsi9JExOh2d9K_8bytemuck8internal13is_aligned_toCsjBW7hFgJwU_9pe_parser:
   150|    164|  }
   151|    164|}
 
-_RINvCsi9JExOh2d9K_8bytemuck14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser7section13SectionHeaderEBJ_:
+_RINvCsciVfI8xTG8z_8bytemuck14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser7section13SectionHeaderEBJ_:
   243|    132|pub fn try_from_bytes<T: AnyBitPattern>(s: &[u8]) -> Result<&T, PodCastError> {
   244|    132|  unsafe { internal::try_from_bytes(s) }
   245|    132|}
-_RINvCsi9JExOh2d9K_8bytemuck14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser8optional16OptionalHeader64EBJ_:
+_RINvCsciVfI8xTG8z_8bytemuck14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser8optional16OptionalHeader64EBJ_:
   243|      2|pub fn try_from_bytes<T: AnyBitPattern>(s: &[u8]) -> Result<&T, PodCastError> {
   244|      2|  unsafe { internal::try_from_bytes(s) }
   245|      2|}
-_RINvCsi9JExOh2d9K_8bytemuck14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser8optional16OptionalHeader32EBJ_:
+_RINvCsciVfI8xTG8z_8bytemuck14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser8optional16OptionalHeader32EBJ_:
   243|      1|pub fn try_from_bytes<T: AnyBitPattern>(s: &[u8]) -> Result<&T, PodCastError> {
   244|      1|  unsafe { internal::try_from_bytes(s) }
   245|      1|}
-_RINvCsi9JExOh2d9K_8bytemuck14try_from_bytesNtNtCsjBW7hFgJwU_9pe_parser4coff14CoffFileHeaderEBJ_:
+_RINvCsciVfI8xTG8z_8bytemuck14try_from_bytesNtNtCshZ07bhv37hB_9pe_parser4coff14CoffFileHeaderEBJ_:
   243|     29|pub fn try_from_bytes<T: AnyBitPattern>(s: &[u8]) -> Result<&T, PodCastError> {
   244|     29|  unsafe { internal::try_from_bytes(s) }
   245|     29|}
 
-_RNvNvCsepMYbehVyWm_9pe_parser1__19___libfuzzer_sys_run:
+_RNvNvCsa9Eh4w2W46J_9pe_parser1__19___libfuzzer_sys_run:
   241|     34|            fn __libfuzzer_sys_run($bytes: &[u8]) {
   242|     34|                $body
   243|     34|            }
@@ -181,7 +181,7 @@ LLVMFuzzerTestOneInput:
    70|       |        }
    71|       |    }
    72|     34|}
-_RNCNvCsdstsiKE0bMC_13libfuzzer_sys15test_input_wrap0B3_:
+_RNCNvCs13f9QrzkkZP_13libfuzzer_sys15test_input_wrap0B3_:
    59|     34|    let test_input = ::std::panic::catch_unwind(|| unsafe {
    60|     34|        let data_slice = ::std::slice::from_raw_parts(data, size);
    61|     34|        rust_fuzzer_test_input(data_slice)
@@ -212,12 +212,12 @@ LLVMFuzzerInitialize:
   101|      2|    0
   102|      2|}
 
-_RNvYNtNtCsjBW7hFgJwU_9pe_parser8optional5MagicNtNtCsjrOIBtAb1EB_10num_traits4cast13FromPrimitive8from_u16B6_:
-  455|      7|    fn from_u16(n: u16) -> Option<Self> {
-  456|      7|        FromPrimitive::from_u64(From::from(n))
-  457|      7|    }
+_RNvYNtNtCshZ07bhv37hB_9pe_parser8optional5MagicNtNtCseJQPTZ9khLI_10num_traits4cast13FromPrimitive8from_u16B6_:
+  455|      6|    fn from_u16(n: u16) -> Option<Self> {
+  456|      6|        FromPrimitive::from_u64(From::from(n))
+  457|      6|    }
 
-_RNvMs2_NtCs3XBbJfbyHdi_9once_cell3impINtB5_8OnceCellNtNtCsjwy42jpqMfb_5alloc6string6StringE14is_initializedCsdstsiKE0bMC_13libfuzzer_sys:
+_RNvMs2_NtCskql2BJTBEXD_9once_cell3impINtB5_8OnceCellNtNtCsgljolu6UF1Z_5alloc6string6StringE14is_initializedCs13f9QrzkkZP_13libfuzzer_sys:
    49|     34|    pub(crate) fn is_initialized(&self) -> bool {
    50|     34|        // An `Acquire` load is enough because that makes all the initialization
    51|     34|        // operations visible to us, and, this being a fast path, weaker
@@ -226,7 +226,7 @@ _RNvMs2_NtCs3XBbJfbyHdi_9once_cell3impINtB5_8OnceCellNtNtCsjwy42jpqMfb_5alloc6st
    54|     34|        self.queue.load(Ordering::Acquire) == COMPLETE_PTR
    55|     34|    }
 
-_RNvMs4_NtCs3XBbJfbyHdi_9once_cell4syncINtB5_8OnceCellNtNtCsjwy42jpqMfb_5alloc6string6StringE3getCsdstsiKE0bMC_13libfuzzer_sys:
+_RNvMs4_NtCskql2BJTBEXD_9once_cell4syncINtB5_8OnceCellNtNtCsgljolu6UF1Z_5alloc6string6StringE3getCs13f9QrzkkZP_13libfuzzer_sys:
   965|     34|        pub fn get(&self) -> Option<&T> {
   966|     34|            if self.0.is_initialized() {
   967|       |                // Safe b/c value is initialized.
@@ -236,10 +236,10 @@ _RNvMs4_NtCs3XBbJfbyHdi_9once_cell4syncINtB5_8OnceCellNtNtCsjwy42jpqMfb_5alloc6s
   971|       |            }
   972|     34|        }
 
-_RNvXs7_NtCsjBW7hFgJwU_9pe_parser4coffNtB5_14CoffFileHeaderNtNtCslwuTnKBYoK4_4core7default7Default7defaultB7_:
+_RNvXs7_NtCshZ07bhv37hB_9pe_parser4coffNtB5_14CoffFileHeaderNtNtCs6qbvDI1kugF_4core7default7Default7defaultB7_:
    10|     30|#[derive(Copy, Clone, Pod, Zeroable, Default)]
 
-_RNvXs4_NtCsjBW7hFgJwU_9pe_parser8optionalNtB5_16OptionalHeader32NtB5_8Optional21parse_optional_header:
+_RNvXs4_NtCshZ07bhv37hB_9pe_parser8optionalNtB5_16OptionalHeader32NtB5_8Optional21parse_optional_header:
   446|      2|    fn parse_optional_header(binary: &[u8], offset: &mut usize) -> Result<Self, Error> {
   447|      2|        let size = core::mem::size_of::<Self>();
   448|      2|        let slice = match binary.get(*offset..*offset+size) {
@@ -261,11 +261,11 @@ _RNvXs4_NtCsjBW7hFgJwU_9pe_parser8optionalNtB5_16OptionalHeader32NtB5_8Optional2
   464|       |            }
   465|       |        }
   466|      2|    }
-_RNvXNvNtCsjBW7hFgJwU_9pe_parser8optional33__IMPL_NUM_FromPrimitive_FOR_MagicNtB4_5MagicNtNtCsjrOIBtAb1EB_10num_traits4cast13FromPrimitive8from_u64B6_:
-   10|      7|#[derive(FromPrimitive, Debug)]
-_RNvXNvNtCsjBW7hFgJwU_9pe_parser8optional33__IMPL_NUM_FromPrimitive_FOR_MagicNtB4_5MagicNtNtCsjrOIBtAb1EB_10num_traits4cast13FromPrimitive8from_i64B6_:
-   10|      7|#[derive(FromPrimitive, Debug)]
-_RNvXs5_NtCsjBW7hFgJwU_9pe_parser8optionalNtB5_16OptionalHeader64NtB5_8Optional21parse_optional_header:
+_RNvXNvNtCshZ07bhv37hB_9pe_parser8optional33__IMPL_NUM_FromPrimitive_FOR_MagicNtB4_5MagicNtNtCseJQPTZ9khLI_10num_traits4cast13FromPrimitive8from_u64B6_:
+   10|      6|#[derive(FromPrimitive, Debug)]
+_RNvXNvNtCshZ07bhv37hB_9pe_parser8optional33__IMPL_NUM_FromPrimitive_FOR_MagicNtB4_5MagicNtNtCseJQPTZ9khLI_10num_traits4cast13FromPrimitive8from_i64B6_:
+   10|      6|#[derive(FromPrimitive, Debug)]
+_RNvXs5_NtCshZ07bhv37hB_9pe_parser8optionalNtB5_16OptionalHeader64NtB5_8Optional21parse_optional_header:
   478|      3|    fn parse_optional_header(binary: &[u8], offset: &mut usize) -> Result<Self, Error> {
   479|      3|        let size = core::mem::size_of::<Self>();
   480|      3|        let slice = match binary.get(*offset..*offset+size) {
@@ -287,11 +287,11 @@ _RNvXs5_NtCsjBW7hFgJwU_9pe_parser8optionalNtB5_16OptionalHeader64NtB5_8Optional2
   496|       |        }
   497|      3|    }
 
-_RNvNtCsjBW7hFgJwU_9pe_parser2pe8read_u16:
-  136|     42|fn read_u16(binary: &[u8], offset: usize) -> Result<u16, Error> {
-  137|     42|    if let Some(array) = binary.get(offset..offset+2) {
-  138|     40|        if let Ok(slice) = array.try_into() {
-  139|     40|            Ok(u16::from_le_bytes(slice))
+_RNvNtCshZ07bhv37hB_9pe_parser2pe8read_u16:
+  136|     41|fn read_u16(binary: &[u8], offset: usize) -> Result<u16, Error> {
+  137|     41|    if let Some(array) = binary.get(offset..offset+2) {
+  138|     39|        if let Ok(slice) = array.try_into() {
+  139|     39|            Ok(u16::from_le_bytes(slice))
   140|       |        } else {
   141|      0|            unreachable!()
   142|       |        }
@@ -299,8 +299,8 @@ _RNvNtCsjBW7hFgJwU_9pe_parser2pe8read_u16:
   144|      2|        Err(Error::OffsetOutOfRange)
   145|       |    }
   146|       |
-  147|     42|}
-_RNvNtCsjBW7hFgJwU_9pe_parser2pe25parse_portable_executable:
+  147|     41|}
+_RNvNtCshZ07bhv37hB_9pe_parser2pe25parse_portable_executable:
    22|     34|pub fn parse_portable_executable(binary: &[u8]) -> Result<PortableExecutable, Error> {
    23|     34|    let mut offset = read_u16(binary, IMAGE_DOS_PE_SIGNATURE_OFFSET)?.into();
    24|       |
@@ -348,10 +348,10 @@ _RNvNtCsjBW7hFgJwU_9pe_parser2pe25parse_portable_executable:
    66|     28|    offset += 20;
    67|     28|
    68|     28|    if pe.coff.size_of_optional_header != 0 {
-   69|      8|        let magic = match Magic::from_u16(read_u16(binary, offset)?) {
+   69|      7|        let magic = match Magic::from_u16(read_u16(binary, offset)?) {
    70|      5|            Some(magic) => magic,
    71|       |            None => {
-   72|      2|                return Err(Error::MissingMagicNumber);
+   72|      1|                return Err(Error::MissingMagicNumber);
    73|       |            }
    74|       |        };
    75|       |
@@ -363,47 +363,47 @@ _RNvNtCsjBW7hFgJwU_9pe_parser2pe25parse_portable_executable:
    81|      3|                pe.optional_header_64 = Some(OptionalHeader64::parse_optional_header(binary, &mut offset)?);
    82|       |            }
    83|       |        }
-   84|     20|    }
+   84|     21|    }
    85|       |
-   86|     22|    pe.section_table = parse_section_table(binary, offset, pe.coff.number_of_sections);
-   87|     22|
-   88|     22|    /*for section in pe.section_table.iter() {
-   89|     22|        let name = match section.get_name() {
-   90|     22|            Some(name) => name,
-   91|     22|            None => {
-   92|     22|                return Err(Error::new(ErrorKind::Other, "Failed to get section name"));
-   93|     22|            }
-   94|     22|        };
-   95|     22|
-   96|     22|        match name.trim_end_matches(char::from(0)) {
-   97|     22|            ".edata" => {
-   98|     22|                println!(".edata Section");
-   99|     22|            }
-  100|     22|            ".idata" => {
-  101|     22|                println!(".idata Section");
-  102|     22|            }
-  103|     22|            _ => {}
-  104|     22|        }
-  105|     22|    }*/
-  106|     22|
-  107|     22|    Ok(pe)
+   86|     23|    pe.section_table = parse_section_table(binary, offset, pe.coff.number_of_sections);
+   87|     23|
+   88|     23|    /*for section in pe.section_table.iter() {
+   89|     23|        let name = match section.get_name() {
+   90|     23|            Some(name) => name,
+   91|     23|            None => {
+   92|     23|                return Err(Error::new(ErrorKind::Other, "Failed to get section name"));
+   93|     23|            }
+   94|     23|        };
+   95|     23|
+   96|     23|        match name.trim_end_matches(char::from(0)) {
+   97|     23|            ".edata" => {
+   98|     23|                println!(".edata Section");
+   99|     23|            }
+  100|     23|            ".idata" => {
+  101|     23|                println!(".idata Section");
+  102|     23|            }
+  103|     23|            _ => {}
+  104|     23|        }
+  105|     23|    }*/
+  106|     23|
+  107|     23|    Ok(pe)
   108|     34|}
 
-_RNvNtCsjBW7hFgJwU_9pe_parser7section19parse_section_table:
-   11|     22|pub fn parse_section_table(binary: &[u8], offset: usize, number_of_sections: u16) -> Vec<SectionHeader> {
-   12|     22|    let mut offset = offset;
-   13|     22|    let mut headers: Vec<SectionHeader> = Vec::new();
-   14|     22|    let header_size = core::mem::size_of::<SectionHeader>();
-   15|     22|
-   16|     22|    for _ in 0..number_of_sections {
-   17|   436k|        if let Some(slice) = binary.get(offset..offset+header_size) {
+_RNvNtCshZ07bhv37hB_9pe_parser7section19parse_section_table:
+   11|     23|pub fn parse_section_table(binary: &[u8], offset: usize, number_of_sections: u16) -> Vec<SectionHeader> {
+   12|     23|    let mut offset = offset;
+   13|     23|    let mut headers: Vec<SectionHeader> = Vec::new();
+   14|     23|    let header_size = core::mem::size_of::<SectionHeader>();
+   15|     23|
+   16|     23|    for _ in 0..number_of_sections {
+   17|   449k|        if let Some(slice) = binary.get(offset..offset+header_size) {
    18|    132|            if let Some(header) = try_from_bytes::<SectionHeader>(slice).ok() {
    19|    132|                headers.push(*header);
    20|    132|            }
-   21|   436k|        }
-   22|   436k|        offset += header_size;
+   21|   449k|        }
+   22|   449k|        offset += header_size;
    23|       |    }
    24|       |
-   25|     22|    headers
-   26|     22|}
+   25|     23|    headers
+   26|     23|}
 
